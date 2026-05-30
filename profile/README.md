@@ -44,18 +44,15 @@ follow the chain.
 
 ## Verifiable
 
-The project dogfoods its own protocol. A signed writ + receipt pair from
-integration testing lives at:
+A canonical example pair lives at:
 
-- [`writ_s9cgwkeb2o`](https://registry.writprotocol.dev/writ/writ_s9cgwkeb2o.json) — the writ that authorized the run.
-- [`receipt_4y3jxubjfa`](https://registry.writprotocol.dev/receipt/receipt_4y3jxubjfa.json) — the evidence of what happened.
+- [`writ_example01`](https://registry.writprotocol.dev/writ/writ_example01.json) — a writ with three-action scope, signed.
+- [`receipt_example01`](https://registry.writprotocol.dev/receipt/receipt_example01.json) — the corresponding signed receipt.
 
-Both are `mode: "dryrun"` (produced during testing against a real form
-without sending the submission). Signatures verify against
-`issued_by.key` and `produced_by.key` respectively, using vanilla
-Ed25519 over RFC 8785 canonical JSON — no protocol-specific verification
-machinery required. See the [reference README][rr] for a four-line
-verification snippet.
+Both signatures verify against `issued_by.key` / `produced_by.key`
+using vanilla Ed25519 over RFC 8785 canonical JSON — no
+protocol-specific verification machinery required. See the
+[reference README][rr] for a five-line verification snippet.
 
 [rr]: https://github.com/writprotocol/writ-protocol#verify-locally
 

@@ -25,8 +25,7 @@ follow the chain.
 - **[writprotocol.dev](https://writprotocol.dev)** — public landing page.
 - **[registry.writprotocol.dev](https://registry.writprotocol.dev)** —
   append-only static registry. Signed writs and receipts published as
-  JSON, addressed by ID, no directory listings. Sourced from a private
-  GitHub repo, served via Cloudflare Pages.
+  JSON, addressed by ID, no directory listings.
 
 ## v0.1 status
 

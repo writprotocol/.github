@@ -56,6 +56,19 @@ protocol-specific verification machinery required. See the
 
 [rr]: https://github.com/writprotocol/writ-protocol#verify-locally
 
+## AI assistance
+
+The implementation in `writ-protocol` was developed with substantial AI
+coding assistance — Claude Opus 4.7 via Claude Code as the primary
+assistant, with OpenAI Codex as an adversarial review pass before each
+substantive commit. Protocol design, scope, and final judgment on every
+change are by the author. AI-assisted commits carry a `Co-Authored-By`
+trailer naming the model and context window; see the repo's
+[AI-assistance section][d] for the full transparency statement and how
+to access the development transcripts.
+
+[d]: https://github.com/writprotocol/writ-protocol#ai-assistance
+
 ## License
 
 MIT, across all repos.
